@@ -1,78 +1,54 @@
-@import "./colorhelpers.scss";
+@import "./colors";
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   position: relative;
+  font-family: Playfair Display;
 }
 
-.navbar {
-  height: 67px;
-  width: 1211px;
-  inset: 46px 30px;
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  color: $white;
+  padding: 1rem 0 0.5rem 0;
+  font-weight: 700;
+  letter-spacing: 0em;
+  z-index: 1;
 
-  @media screen and (max-width: 800px) {
-    height: 40px;
-    width: 100%;
-    inset: 5px 0;
+  .logo {
+    margin-right: 24rem;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: left;
+
+    span {
+      &.cap_case {
+        text-transform: capitalize;
+      }
+      &.up_case {
+        text-transform: uppercase;
+      }
+    }
   }
-  .navbar_inner {
+
+  ul {
     display: flex;
-    justify-content: space-between;
-    place-items: center;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: left;
 
-    .logo {
-      P {
-        font-family: Roboto Slab;
-        font-size: 43px;
-        font-weight: 700;
-        line-height: 27px;
-        letter-spacing: 0em;
-        text-align: left;
+    li {
+      margin-left: 4rem;
+      cursor: pointer;
 
-        @media screen and (max-width: 800px) {
-          font-size: 30px;
-        }
-      }
-    }
-
-    ul {
-      display: flex;
-      justify-content: space-between;
-      list-style: none;
-      font-family: Inter;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 27px;
-      letter-spacing: 0em;
-      text-align: left;
-      inset: 0 120px;
-
-      @media screen and (max-width: 800px) {
-        display: none;
-      }
-      li {
-        margin: 0 81px;
-      }
-    }
-    button {
-      background-color: $black;
-      color: $white;
-      height: 47px;
-      width: 122px;
-      border-radius: 8px;
-      font-family: Roboto Slab;
-      font-size: 15px;
-      font-weight: 400;
-      line-height: 27px;
-      letter-spacing: 0em;
-      text-align: center;
-
-      @media screen and (max-width: 800px) {
-        height: 30px;
-        width: 100px;
-        border: 1px solid;
+      &:hover {
+        color: $secondary;
       }
     }
   }

@@ -1,23 +1,26 @@
 import React from "react";
-import "../styles/navbar.scss";
+import "../Styles/navbar.scss";
 
-export const NavBar = () => {
+const NavBar = () => {
   return (
     <>
-      <div className="navbar">
-        <div className="navbar_inner">
-          <div className="logo">
-            <p>Iyanex</p>
-          </div>
-          <ul>
-            <li>Home</li>
-            <li>Blog</li>
-            <li>About</li>
-            <li>Contact</li>
-          </ul>
-          <button>Sign Up</button>
+      <nav>
+        <div className="logo">
+          <span className="cap_case">lux</span>
+          <span className="up_case">nail</span>
+          <span className="cap_case">Bar</span>
         </div>
-      </div>
+
+        <ul>
+          <li>HOME</li>
+          <li>ABOUT US</li>
+          <li>SERVICES</li>
+          <li>REVIEWS</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
     </>
   );
 };
+
+export default NavBar;

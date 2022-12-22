@@ -1,0 +1,47 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Playfair Display;
+}
+
+section {
+  &.services_sec {
+    p.header_text {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 64px;
+      letter-spacing: 0em;
+    }
+
+    .service_box {
+      display: flex;
+      justify-content: space-evenly;
+      .flexbox {
+        .image_flex {
+          img {
+            height: 18rem;
+            width: 25rem;
+            border-radius: 0px;
+          }
+        }
+
+        p {
+          font-weight: 400;
+          letter-spacing: 0em;
+
+          &.top_text {
+            line-height: 48px;
+            font-size: 36px;
+          }
+          &.bottom_text {
+            font-size: 24px;
+            line-height: 32px;
+          }
+        }
+      }
+    }
+  }
+}

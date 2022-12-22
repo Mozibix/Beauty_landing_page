@@ -1,0 +1,59 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Playfair Display;
+}
+
+section {
+  &.footer_sec {
+    background-color: $primary;
+    color: $white;
+    padding-top: 48px;
+    footer {
+      .top_footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+
+        h4 {
+          margin-bottom: 15px;
+        }
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 30px;
+
+            &.socials {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              li {
+                margin-right: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .line {
+        height: 0px;
+        width: 1293px;
+        border: 2.5px solid $white;
+      }
+
+      .bottom_footer {
+        ul {
+          display: flex;
+          justify-content: space-evenly;
+          list-style: none;
+          padding: 21px;
+          li {
+          }
+        }
+      }
+    }
+  }
+}

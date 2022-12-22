@@ -1,0 +1,82 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Playfair Display;
+}
+
+section {
+  &.review_sec {
+    display: flex;
+    align-items: center;
+    padding-bottom: 140px;
+
+    .left_review {
+      padding: 1.5rem;
+      margin-right: 17rem;
+      .header_text {
+        p {
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 64px;
+          letter-spacing: 0em;
+        }
+      }
+
+      .quote {
+        height: 8rem;
+        width: 24rem;
+        border-radius: nullpx;
+        margin-top: 34px;
+        margin-bottom: 28px;
+
+        p {
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 32px;
+          letter-spacing: 0em;
+        }
+      }
+
+      .name_info {
+        height: 96px;
+        width: 274px;
+        border-radius: nullpx;
+
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 48px;
+        letter-spacing: 0em;
+        text-align: right;
+      }
+    }
+
+    .right_review {
+      .review_box {
+        height: 200px;
+        width: 260px;
+        border-radius: 0px;
+      }
+
+      .up_box {
+        inset: 1.5rem -2.5rem;
+        background-color: $secondary;
+      }
+
+      .down_box {
+        inset: 4rem 13rem;
+        background-color: $bottom_box;
+      }
+      img {
+        position: absolute;
+        z-index: 1;
+        height: 360px;
+        width: 400px;
+        inset: 4rem 1rem;
+        border-radius: 0px;
+      }
+    }
+  }
+}

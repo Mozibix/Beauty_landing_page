@@ -1,0 +1,65 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Playfair Display;
+}
+
+section {
+  &.hero_sec {
+    display: flex;
+
+    .hero_left {
+      img {
+        height: 37.5rem;
+        width: 45rem;
+        width: 45rem;
+        border-radius: 0px;
+        inset: -0.1rem -0.1rem;
+        z-index: 0;
+      }
+
+      p {
+        position: absolute;
+        height: 196px;
+        width: 337px;
+        left: 0;
+        top: 17.5rem;
+        border-radius: nullpx;
+        z-index: 1;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: right;
+      }
+    }
+
+    .hero_right {
+      .box {
+        position: absolute;
+        width: 20rem;
+        height: 18rem;
+      }
+
+      .top {
+        background-color: $secondary;
+        inset: -0.1rem -0.3rem;
+      }
+
+      .bottom {
+        background-color: $bottom_box;
+        inset: 19.7rem 16.8rem;
+      }
+
+      img {
+        width: 32rem;
+        height: 34rem;
+        inset: 2rem 2.5rem;
+        z-index: 1;
+      }
+    }
+  }
+}
