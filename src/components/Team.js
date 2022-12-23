@@ -23,7 +23,7 @@ const Team = (props) => {
       <div className="team_flex_inner">
         <div className="team_box">
           <div className="image_sec">
-            <img src={props.img_src} alt="team image" />
+            <img src={props.img_src} alt="team" />
           </div>
 
           <div className="details_sec">

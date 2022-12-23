@@ -5,6 +5,7 @@ import NavBar from "./NavBar";
 import Review from "./Review";
 import ServiceSec from "./Services";
 import TeamSec from "./Team";
+import "../Styles/home.scss";
 
 const Home = () => {
   return (

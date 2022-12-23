@@ -9,22 +9,49 @@
 
 section {
   &.footer_sec {
+    overflow: hidden;
+
     background-color: $primary;
     color: $white;
     padding-top: 48px;
     footer {
+      padding-left: 1rem;
       .top_footer {
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
 
+        .logo {
+          p {
+            inset: -1rem 0;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 43px;
+            letter-spacing: 0em;
+          }
+        }
+
         h4 {
+          cursor: pointer;
           margin-bottom: 15px;
+          font-size: 28px;
+          font-weight: 700;
+          line-height: 37px;
+          letter-spacing: 0em;
         }
         ul {
           list-style: none;
           li {
-            margin-bottom: 30px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 33px;
+            letter-spacing: 0em;
+
+            &:hover {
+              color: $secondary;
+            }
 
             &.socials {
               display: flex;
@@ -39,18 +66,24 @@ section {
       }
 
       .line {
+        inset: -1.5rem 7.5rem;
         height: 0px;
-        width: 1293px;
+        width: 74rem;
         border: 2.5px solid $white;
       }
 
       .bottom_footer {
         ul {
           display: flex;
-          justify-content: space-evenly;
+          justify-content: space-around;
+          align-items: center;
           list-style: none;
           padding: 21px;
           li {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 32px;
+            letter-spacing: 0em;
           }
         }
       }
