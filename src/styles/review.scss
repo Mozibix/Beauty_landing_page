@@ -13,69 +13,149 @@ section {
     align-items: center;
     padding-bottom: 140px;
 
+    @media screen and (max-width: 770px) {
+      flex-direction: column;
+      padding-bottom: 0;
+    }
+
     .left_review {
       padding: 1.5rem;
       margin-right: 17rem;
+
+      @media screen and (max-width: 770px) {
+        padding: 0;
+        margin-right: 0;
+      }
+
       .header_text {
         p {
           font-size: 48px;
           font-weight: 700;
           line-height: 64px;
           letter-spacing: 0em;
+
+          @media screen and (max-width: 770px) {
+            font-size: 26px;
+            line-height: 48px;
+          }
         }
       }
 
-      .quote {
-        height: 8rem;
-        width: 24rem;
-        border-radius: nullpx;
-        margin-top: 34px;
-        margin-bottom: 28px;
+      .main_quote {
+        @media screen and (max-width: 770px) {
+          inset: 23rem 0;
+        }
 
-        p {
-          font-size: 24px;
+        @media screen and (min-width: 401px) and (max-width: 760px) {
+          inset: 26rem -2rem;
+        }
+
+        .quote {
+          height: 8rem;
+          width: 24rem;
+          border-radius: nullpx;
+          margin-top: 34px;
+          margin-bottom: 28px;
+
+          @media screen and (max-width: 770px) {
+            width: 13.5rem;
+          }
+          p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0em;
+            @media screen and (max-width: 770px) {
+              font-size: 13px;
+              line-height: 17px;
+            }
+          }
+        }
+
+        .name_info {
+          height: 96px;
+          width: 274px;
+          border-radius: nullpx;
+          font-size: 36px;
           font-weight: 400;
-          line-height: 32px;
+          line-height: 48px;
           letter-spacing: 0em;
+          text-align: right;
+          @media screen and (max-width: 770px) {
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 20px;
+            inset: -3rem -8rem;
+          }
         }
-      }
-
-      .name_info {
-        height: 96px;
-        width: 274px;
-        border-radius: nullpx;
-
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 48px;
-        letter-spacing: 0em;
-        text-align: right;
       }
     }
 
     .right_review {
+      @media screen and (max-width: 770px) {
+        inset: -19rem 0;
+      }
+
       .review_box {
+        margin-top: 24px;
         height: 200px;
         width: 260px;
         border-radius: 0px;
+
+        @media screen and (max-width: 770px) {
+          height: 150px;
+          width: 200px;
+        }
+
+        @media screen and (min-width: 330px) and (max-width: 400px) {
+          width: 255px;
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 760px) {
+          width: 305px;
+          height: 170px;
+        }
       }
 
       .up_box {
         inset: 1.5rem -2.5rem;
         background-color: $secondary;
+        @media screen and (max-width: 770px) {
+          inset: 1.5rem -4rem;
+        }
       }
 
       .down_box {
-        inset: 4rem 13rem;
+        inset: 4rem 11rem;
         background-color: $bottom_box;
+        @media screen and (max-width: 770px) {
+          inset: 1.8rem 3.7rem;
+        }
       }
       img {
         position: absolute;
         z-index: 1;
-        height: 360px;
+        height: 380px;
         width: 400px;
-        inset: 4rem 1rem;
+        inset: 5rem 0.5rem;
         border-radius: 0px;
+        @media screen and (max-width: 770px) {
+          height: 240px;
+          width: 280px;
+          inset: 5.5rem -2.5rem;
+        }
+
+        @media screen and (min-width: 330px) and (max-width: 400px) {
+          inset: 4.5rem -2.5rem;
+          height: 280px;
+          width: 330px;
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 760px) {
+          inset: 4.8rem -2.5rem;
+          height: 310px;
+          width: 380px;
+        }
       }
     }
   }

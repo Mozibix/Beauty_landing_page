@@ -11,6 +11,7 @@ const Review = () => {
           <div className="header_text">
             <p>Our Customers' Review</p>
           </div>
+          <div className="main_quote">
           <div className="quote">
             <p>
               I love getting my nails done at the LuxNailBar, their services are
@@ -24,6 +25,7 @@ const Review = () => {
               <div className="bottom">
                 <p>N.Y</p>
               </div>
+            </div>
             </div>
           </div>
         </div>

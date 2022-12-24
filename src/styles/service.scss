@@ -15,17 +15,40 @@ section {
       font-weight: 700;
       line-height: 64px;
       letter-spacing: 0em;
+
+      @media screen and (max-width: 770px) {
+        margin: 39px 0px;
+        font-size: 36px;
+      }
     }
 
     .service_box {
       display: flex;
       justify-content: space-evenly;
+      @media screen and (max-width: 770px) {
+        flex-direction: column;
+        gap: 5rem;
+      }
+
       .flexbox {
         .image_flex {
           img {
             height: 18rem;
             width: 25rem;
             border-radius: 0px;
+
+            @media screen and (max-width: 770px) {
+              height: 13rem;
+              width: 18rem;
+            }
+
+            @media screen and (min-width: 330px) and (max-width: 400px) {
+              width: 21.5rem;
+            }
+
+            @media screen and (min-width: 401px) and (max-width: 760px) {
+              width: 24.5rem;
+            }
           }
         }
 
@@ -36,10 +59,19 @@ section {
           &.top_text {
             line-height: 48px;
             font-size: 36px;
+            @media screen and (max-width: 770px) {
+              font-size: 24px;
+              line-height: 32px;
+            }
           }
           &.bottom_text {
             font-size: 24px;
             line-height: 32px;
+
+            @media screen and (max-width: 770px) {
+              font-size: 17px;
+              line-height: 24px;
+            }
           }
         }
       }

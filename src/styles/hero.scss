@@ -10,15 +10,33 @@
 section {
   &.hero_sec {
     display: flex;
+    @media screen and (max-width: 770px) {
+      flex-direction: column;
+    }
 
     .hero_left {
       img {
         height: 37.5rem;
         width: 45rem;
-        width: 45rem;
         border-radius: 0px;
         inset: -0.1rem -0.1rem;
         z-index: 0;
+
+        @media screen and (max-width: 770px) {
+          height: 30rem;
+          width: 20rem;
+          inset: -1px 0.1px;
+        }
+
+        @media screen and (min-width: 330px) and (max-width: 400px) {
+          width: 23.4rem;
+          inset: -1px 0.5px;
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 760px) {
+          width: 26.5rem;
+          inset: -2px 0.7px;
+        }
       }
 
       p {
@@ -34,6 +52,16 @@ section {
         line-height: 50px;
         letter-spacing: 0em;
         text-align: right;
+
+        @media screen and (max-width: 770px) {
+          font-size: 20px;
+          width: 137px;
+          top: 15rem;
+          left: 1rem;
+          font-weight: 700;
+          line-height: 27px;
+          letter-spacing: 0em;
+        }
       }
     }
 
@@ -42,6 +70,20 @@ section {
         position: absolute;
         width: 20rem;
         height: 18rem;
+
+        @media screen and (max-width: 770px) {
+          width: 12rem;
+          height: 12rem;
+        }
+
+        @media screen and (min-width: 330px) and (max-width: 400px) {
+          width: 15.4rem;
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 760px) {
+          width: 18.5rem;
+          height: 13rem;
+        }
       }
 
       .top {
@@ -52,6 +94,10 @@ section {
       .bottom {
         background-color: $bottom_box;
         inset: 19.7rem 16.8rem;
+
+        @media screen and (max-width: 770px) {
+          inset: 17.7rem 8rem;
+        }
       }
 
       img {
@@ -59,6 +105,20 @@ section {
         height: 34rem;
         inset: 2rem 2.5rem;
         z-index: 1;
+
+        @media screen and (max-width: 770px) {
+          width: 18rem;
+          height: 25rem;
+          inset: 2rem 1rem;
+        }
+        @media screen and (min-width: 330px) and (max-width: 400px) {
+          width: 21rem;
+        }
+
+        @media screen and (min-width: 401px) and (max-width: 760px) {
+          height: 26rem;
+          width: 24rem;
+        }
       }
     }
   }
