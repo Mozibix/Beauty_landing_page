@@ -1,0 +1,71 @@
+@import "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Playfair Display;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary;
+  color: $white;
+  padding: 1rem 0 0.5rem 0;
+  font-weight: 700;
+  letter-spacing: 0em;
+  z-index: 1;
+
+
+  .logo {
+    font-size: 32px;
+    line-height: 43px;
+    margin-right: 24rem;
+    text-align: left;
+
+    @media screen and (max-width: 770px) {
+      margin: 0;
+      inset: 0 -5rem;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 24px;
+    }
+
+    span {
+      &.cap_case {
+        text-transform: capitalize;
+      }
+      &.up_case {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: left;
+
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
+    @media screen and (max-width: 320px) {
+      display: none;
+    }
+
+    li {
+      margin-left: 4rem;
+      cursor: pointer;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
